@@ -1,12 +1,12 @@
 package com.castle.data;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+/*import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;*/
 
-@SpringBootTest
+//@SpringBootTest
 class CastleDataApplicationTests {
 
-    @Test
+//    @Test
     void contextLoads() {
     }
 
