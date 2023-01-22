@@ -4,6 +4,11 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
@@ -11,26 +16,7 @@ public class DailyWeather {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private long unixTime;
-    private long sunrise;
-    private long sunset;
-    private float dayTemperature;
-    private float minTemperature;
-    private float maxTemperature;
-    private float nightTemperature;
-    private float eveningTemperature;
-    private float morningTemperature;
-    private float dayPerceivedTemperature;
-    private float nightPerceivedTemperature;
-    private float eveningPerceivedTemperature;
-    private float morningPerceivedTemperature;
-    private int pressure;
-    private int humidity;
-    private float windSpeed;
-    @OneToOne(mappedBy = "dailyWeather")
-    private WeatherDescription weatherDescription;
-    private int cloudiness;
-    private float probabilityOfPrecipitation;
-    private float rainAmount;
-    private float uvi;
+    private long unixTimeOfForecast = LocalDateTime.now().toEpochSecond(ZoneOffset.UTC);
+    @OneToMany(mappedBy = "dailyWeather")
+    private List<DailyWeatherElement> dailyWeatherElements = new ArrayList<>();
 }
