@@ -13,4 +13,3 @@ public class DataRepository implements IDataRepository {
     private final WeatherDescriptionRepository weatherDescriptionRepository;
     private final WeatherRepository weatherRepository;
 }
-//Instead of creating 'element' entities, mapper will map 'element' dto instances into normal instances
