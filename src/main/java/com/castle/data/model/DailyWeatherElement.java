@@ -25,7 +25,7 @@ public class DailyWeatherElement {
     private int pressure;
     private int humidity;
     private float windSpeed;
-    @OneToOne(mappedBy = "dailyWeather")
+    @OneToOne(mappedBy = "dailyWeatherElement")
     private WeatherDescription weatherDescription;
     private int cloudiness;
     private float probabilityOfPrecipitation;

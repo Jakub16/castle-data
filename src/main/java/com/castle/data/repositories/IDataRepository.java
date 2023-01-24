@@ -5,4 +5,6 @@ public interface IDataRepository {
     HourlyWeatherRepository getHourlyWeatherRepository();
     WeatherRepository getWeatherRepository();
     WeatherDescriptionRepository getWeatherDescriptionRepository();
+    HourlyWeatherElementRepository getHourlyWeatherElementRepository();
+    DailyWeatherElementRepository getDailyWeatherElementRepository();
 }

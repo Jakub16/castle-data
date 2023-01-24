@@ -12,4 +12,6 @@ public class DataRepository implements IDataRepository {
     private final HourlyWeatherRepository hourlyWeatherRepository;
     private final WeatherDescriptionRepository weatherDescriptionRepository;
     private final WeatherRepository weatherRepository;
+    private final HourlyWeatherElementRepository hourlyWeatherElementRepository;
+    private final DailyWeatherElementRepository dailyWeatherElementRepository;
 }

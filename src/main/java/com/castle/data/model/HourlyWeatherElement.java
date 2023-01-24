@@ -17,7 +17,7 @@ public class HourlyWeatherElement {
     private float uvi;
     private int cloudiness;
     private float windSpeed;
-    @OneToOne(mappedBy = "hourlyWeather")
+    @OneToOne(mappedBy = "hourlyWeatherElement")
     private WeatherDescription weatherDescription;
     private float probabilityOfPrecipitation;
     private float rainAmount;

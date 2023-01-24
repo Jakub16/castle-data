@@ -17,7 +17,7 @@ public class WeatherDescription {
     @OneToOne
     private Weather weather;
     @OneToOne
-    private DailyWeather dailyWeather;
+    private DailyWeatherElement dailyWeatherElement;
     @OneToOne
-    private HourlyWeather hourlyWeather;
+    private HourlyWeatherElement hourlyWeatherElement;
 }
