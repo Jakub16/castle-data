@@ -1,10 +1,12 @@
 package com.castle.data.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Setter
+@Getter
 public class HourlyWeatherElement {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
